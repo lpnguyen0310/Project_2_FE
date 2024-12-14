@@ -1,0 +1,219 @@
+extends ../layouts/default.pug
+include ../mixins/breadcrumb.pug
+include ../mixins/box-head.pug
+
+block title
+  title Chi tiết sản phẩm
+
+block main
+  //- Product Info
+  .product-info
+    .container
+      .product-info__wrap
+        .product-info__left
+          .product-info__images-main
+            img(src="assets/images/pet-1.jpg")
+          .product-info__images-thumb
+            img(src="assets/images/pet-1.jpg")
+            img(src="assets/images/pet-2.jpg")
+            img(src="assets/images/pet-3.jpg")
+            img(src="assets/images/pet-4.jpg")
+            img(src="assets/images/pet-5.jpg")
+        .product-info__right
+          //- Box Breadcrumb
+          -
+            var breadcrumb = [
+              {
+                link: "#",
+                title: "Trang chủ"
+              },
+              {
+                link: "#",
+                title: "Chó"
+              },
+              {
+                link: "#",
+                title: "Chó nhỏ"
+              },
+              {
+                link: "#",
+                title: "Shiba Inu Màu Nâu Đỏ"
+              }
+            ];
+
+          +breadcrumb(breadcrumb)
+          //- End Box Breadcrumb
+
+          h1.product-info__title Shiba Inu Màu Nâu Đỏ
+          .product-info__price 12.000.000 VND
+          .product-info__buttons
+            a(href="#" class="button") Liên hệ
+            a(href="#" class="button button--outline") <i class="fa-regular fa-comment-dots"></i> Chat với Monito
+          .product-info__table
+            table
+              tbody
+                tr
+                  td SKU
+                  td #1000078
+                tr
+                  td Giống
+                  td Cái
+                tr
+                  td Tuổi
+                  td 2 tháng
+                tr
+                  td Kích thước
+                  td Nhỏ
+                tr
+                  td Màu sắc
+                  td Nâu đỏ
+                tr
+                  td Mô tả ngắn
+                  td Giống thuần chủng Shih Tzu. Cấu trúc cơ thể tốt. Với chứng chỉ MKA và Microchip. Cha từ dòng dõi vô địch.
+          nav.box-share
+            .box-share__label <i class="fa-solid fa-share-nodes"></i> Chia sẻ:
+            ul.box-share__list
+              li
+                a(href="#") <i class="fa-brands fa-square-facebook"></i>
+              li
+                a(href="#") <i class="fa-brands fa-square-x-twitter"></i>
+              li
+                a(href="#") <i class="fa-brands fa-square-instagram"></i>
+              li
+                a(href="#") <i class="fa-brands fa-square-youtube"></i>
+  //- End Product Info
+
+  //- Section 1
+  .section-customer 
+    .container 
+      +box-head(
+        "",
+        "Khách hàng của chúng tôi"
+      )
+      div(class = "customer-section__wrap")
+        .customer-item
+           div(class="customer-item__image")
+            a(href="#")
+              img(
+                alt="" 
+                src="assets/images/customer_1.png"
+                )
+        .customer-item
+           div(class="customer-item__image")
+            a(href="#")
+              img(
+                alt="" 
+                src="assets/images/customer_2.jpg"
+                )
+        .customer-item
+           div(class="customer-item__image")
+            a(href="#")
+              img(
+                alt="" 
+                src="assets/images/customer_3.jpg"
+                )
+        .customer-item
+           div(class="customer-item__image")
+            a(href="#")
+              img(
+                alt="" 
+                src="assets/images/customer_4.jpg"
+                )
+      div.progress-indicator
+          img.active(src="assets/images/dot_1.png" alt="Active Dot")
+          img(src="assets/images/dot_2.png" alt="Inactive Dot")
+          img(src="assets/images/dot_2.png" alt="Inactive Dot")
+          img(src="assets/images/dot_2.png" alt="Inactive Dot")
+          img(src="assets/images/dot_2.png" alt="Inactive Dot")
+
+       
+
+  //- Section 2
+  .section-2
+    .container
+      +box-head(
+        "Có gì mới?",
+        "Xem thêm chó con"
+      )
+      div(class="section-2__wrap")
+        .product-item
+          div(class="product-item__image")
+            a(href="#")
+              img(
+                alt="" 
+                src="assets/images/product-1.jpg"
+                )
+          div(class="product-item__content")
+            h3(class="product-item__title")
+              a(href="#") MO231 - Pomeranian Trắng
+            div(class="product-item__desc")
+              div(class="product-item__desc-item")
+                | Giống:
+                b Đực
+              div(class="product-item__dot")
+              div(class="product-item__desc-item")
+                | Tuổi:
+                b 02 tháng
+            div(class="product-item__price") 6.900.000 VND
+        .product-item
+          div(class="product-item__image")
+            a(href="#")
+              img(
+                alt="" 
+                src="assets/images/product_2.jpg"
+                )
+          div(class="product-item__content")
+            h3(class="product-item__title")
+              a(href="#") MO232 - Pomeranian Trắng
+            div(class="product-item__desc")
+              div(class="product-item__desc-item")
+                | Giống:
+                b Đực
+              div(class="product-item__dot")
+              div(class="product-item__desc-item")
+                | Tuổi:
+                b 02 tháng
+            div(class="product-item__price") 6.900.000 VND
+        .product-item
+          div(class="product-item__image")
+            a(href="#")
+              img(
+                alt="" 
+                src="assets/images/product_3.svg"
+                )
+          div(class="product-item__content")
+            h3(class="product-item__title")
+              a(href="#") MO233 - Pomeranian Trắng
+            div(class="product-item__desc")
+              div(class="product-item__desc-item")
+                | Giống:
+                b Đực
+              div(class="product-item__dot")
+              div(class="product-item__desc-item")
+                | Tuổi:
+                b 02 tháng 
+            div(class="product-item__price") 6.900.000 VND 
+        .product-item
+          div(class="product-item__image")
+            a(href="#")
+              img(
+                alt="" 
+                src="assets/images/product_3.svg"
+                )
+          div(class="product-item__content")
+            h3(class="product-item__title")
+              a(href="#") MO233 - Pomeranian Trắng
+            div(class="product-item__desc")
+              div(class="product-item__desc-item")
+                | Giống:
+                b Đực
+              div(class="product-item__dot")
+              div(class="product-item__desc-item")
+                | Tuổi:
+                b 02 tháng 
+            div(class="product-item__price") 6.900.000 VND 
+      div(class="section-2__button-buttom")
+        a.button.button--outline(href="#")
+          | Xem thêm
+          i.fa-solid.fa-angle-right
+  //- End Section 2

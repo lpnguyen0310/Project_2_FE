@@ -1,0 +1,204 @@
+extends ../layouts/default.pug
+include ../mixins/box-head.pug
+
+block title
+  title Trang chủ
+
+block main
+  //- Section 1
+  .section-1
+    .container
+      .section-1__wrap
+        img(src="assets/images/section-1-bg-4.svg" class="section-1__bg-4" alt="")
+        img(src="assets/images/section-1-bg-1.svg" class="section-1__bg-1" alt="")
+        .section-1__content
+          h1.section-1__title Thêm Một Bạn
+          h2.section-1__sub-title Thêm Ngàn Niềm Vui!
+          p.section-1__desc Có một con thú cưng đồng nghĩa với việc bạn có thêm niềm vui mới. Chúng tôi có hơn 200 con thú cưng khác nhau có thể đáp ứng nhu cầu của bạn!
+          .section-1__buttons
+            a(href="#" class="button button--outline")
+              | Giới Thiệu <i class="fa-regular fa-circle-play"></i>
+            a(href="#" class="button") Khám Phá Ngay
+        img(src="assets/images/section-1-bg-2.svg" class="section-1__bg-2" alt="")
+        .section-1__image
+          img(src="assets/images/section-1-bg-3.svg" class="section-1__bg-3" alt="")
+          img(src="assets/images/image-1.png" class="section-1__image-main" alt="")
+  //- End Section 1
+
+  //- Section 2
+  .section-2
+    .container
+      +box-head(
+        "Có gì mới?",
+        "một số vật nuôi của chúng tôi",
+        "#"
+      )
+      div(class="section-2__wrap")
+        .product-item
+          div(class="product-item__image")
+            a(href="#")
+              img(
+                alt="" 
+                src="assets/images/product-1.jpg"
+                )
+          div(class="product-item__content")
+            h3(class="product-item__title")
+              a(href="#") MO231 - Pomeranian Trắng
+            div(class="product-item__desc")
+              div(class="product-item__desc-item")
+                | Giống:
+                b Đực
+              div(class="product-item__dot")
+              div(class="product-item__desc-item")
+                | Tuổi:
+                b 02 tháng
+            div(class="product-item__price") 6.900.000 VND
+        .product-item
+          div(class="product-item__image")
+            a(href="#")
+              img(
+                alt="" 
+                src="assets/images/product_2.jpg"
+                )
+          div(class="product-item__content")
+            h3(class="product-item__title")
+              a(href="#") MO232 - Pomeranian Trắng
+            div(class="product-item__desc")
+              div(class="product-item__desc-item")
+                | Giống:
+                b Đực
+              div(class="product-item__dot")
+              div(class="product-item__desc-item")
+                | Tuổi:
+                b 02 tháng
+            div(class="product-item__price") 6.900.000 VND
+        .product-item
+          div(class="product-item__image")
+            a(href="#")
+              img(
+                alt="" 
+                src="assets/images/product_3.svg"
+                )
+          div(class="product-item__content")
+            h3(class="product-item__title")
+              a(href="#") MO233 - Pomeranian Trắng
+            div(class="product-item__desc")
+              div(class="product-item__desc-item")
+                | Giống:
+                b Đực
+              div(class="product-item__dot")
+              div(class="product-item__desc-item")
+                | Tuổi:
+                b 02 tháng
+            div(class="product-item__price") 6.900.000 VND
+        .product-item
+          div(class="product-item__image")
+            a(href="#")
+              img(
+                alt="" 
+                src="assets/images/product-4.jpg"
+                )
+          div(class="product-item__content")
+            h3(class="product-item__title")
+              a(href="#") MO234 - Pomeranian Trắng
+            div(class="product-item__desc")
+              div(class="product-item__desc-item")
+                | Giống:
+                b Đực
+              div(class="product-item__dot")
+              div(class="product-item__desc-item")
+                | Tuổi:
+                b 02 tháng
+            div(class="product-item__price") 6.900.000 VND
+        .product-item
+          div(class="product-item__image")
+            a(href="#")
+              img(
+                alt="" 
+                src="assets/images/product-5.jpg"
+                )
+          div(class="product-item__content")
+            h3(class="product-item__title")
+              a(href="#") MO235 - Pomeranian Trắng
+            div(class="product-item__desc")
+              div(class="product-item__desc-item")
+                | Giống:
+                b Đực
+              div(class="product-item__dot")
+              div(class="product-item__desc-item")
+                | Tuổi:
+                b 02 tháng
+            div(class="product-item__price") 6.900.000 VND
+        .product-item
+          div(class="product-item__image")
+            a(href="#")
+              img(
+                alt="" 
+                src="assets/images/product-6.jpg"
+                )
+          div(class="product-item__content")
+            h3(class="product-item__title")
+              a(href="#") MO236 - Pomeranian Trắng
+            div(class="product-item__desc")
+              div(class="product-item__desc-item")
+                | Giống:
+                b Đực
+              div(class="product-item__dot")
+              div(class="product-item__desc-item")
+                | Tuổi:
+                b 02 tháng
+            div(class="product-item__price") 6.900.000 VND
+        .product-item
+          div(class="product-item__image")
+            a(href="#")
+              img(
+                alt="" 
+                src="assets/images/product-7.jpg"
+                )
+          div(class="product-item__content")
+            h3(class="product-item__title")
+              a(href="#") MO236 - Pomeranian Trắng
+            div(class="product-item__desc")
+              div(class="product-item__desc-item")
+                | Giống:
+                b Đực
+              div(class="product-item__dot")
+              div(class="product-item__desc-item")
+                | Tuổi:
+                b 02 tháng
+            div(class="product-item__price") 6.900.000 VND
+        .product-item
+          div(class="product-item__image")
+            a(href="#")
+              img(
+                alt="" 
+                src="assets/images/product-8.jpg"
+                )
+          div(class="product-item__content")
+            h3(class="product-item__title")
+              a(href="#") MO236 - Pomeranian Trắng
+            div(class="product-item__desc")
+              div(class="product-item__desc-item")
+                | Giống:
+                b Đực
+              div(class="product-item__dot")
+              div(class="product-item__desc-item")
+                | Tuổi:
+                b 02 tháng
+            div(class="product-item__price") 6.900.000 VND
+         
+            
+      div(class="section-2__button-buttom")
+        a.button.button--outline(href="#")
+          | Xem thêm
+          i.fa-solid.fa-angle-right
+  //- End Section 2
+
+  //- Section 3
+  include ../partials/section-3.pug
+  //- End Section 3
+
+  //- Section 4
+  include ../partials/section-4.pug
+  
+  //- End Section 4

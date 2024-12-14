@@ -1,0 +1,10 @@
+mixin box-head(subTitle, title, link)
+  .box-head
+    div(class="box-head__left")
+      div(class="box-head__sub-title") #{subTitle}
+      h2(class="box-head__title") #{title}
+    if(link)
+      div(class="box-head__right")
+        a.button.button--outline(href=link)
+          | Xem thêm
+          i.fa-solid.fa-angle-right
